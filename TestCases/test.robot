@@ -1,0 +1,2 @@
+*** Settings ***
+#my first project
