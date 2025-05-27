@@ -1,6 +1,17 @@
 *** Settings ***
-#my first project
+Library    SeleniumLibrary
+
 
 *** Variables ***
-#ts
-#testingdd
+
+
+
+*** Test Cases ***
+LoginTest
+    open browser    https://demo.nopcommerce.com/   chrome
+
+
+
+
+
+*** Keywords ***
