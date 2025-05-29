@@ -16,6 +16,8 @@ RegTest
 
     open browser    https://demowebshop.tricentis.com/register  chrome
     maximize browser window
+    ${time}=    get selenium timeout
+    log to console    ${time}
     set selenium timeout    10 seconds
     wait until element contains    Register #it will wait to find this element with default 5 seconds
 
