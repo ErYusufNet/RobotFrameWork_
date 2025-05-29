@@ -16,7 +16,9 @@ RegTest
 
     open browser    https://demowebshop.tricentis.com/register  chrome
     maximize browser window
-    set selenium speed    2 seconds
+    set selenium timeout    10 seconds
+    wait until element contains    Register #it will wait to find this element with default 5 seconds
+
     select radio button    Gender   M
     fill personal information
     click button    id:register-button
