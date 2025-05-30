@@ -1,79 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-27T23:17:05.514517" rpa="false" schemaversion="5">
-<suite id="s1" name="2-Inputbox" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\2-inputbox.robot">
-<test id="s1-t1" name="TestingInputBox" line="9">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-29T23:38:27.263051" rpa="false" schemaversion="5">
+<suite id="s1" name="Alerts" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\alerts.robot">
+<test id="s1-t1" name="HandlingAlerts" line="7">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-27T23:17:05.707592" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
+<msg time="2025-05-29T23:38:27.477787" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-27T23:17:05.707378" elapsed="1.813937"/>
+<status status="PASS" start="2025-05-29T23:38:27.477603" elapsed="2.851117"/>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-27T23:17:07.521747" elapsed="0.027308"/>
-</kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-27T23:17:07.562740" level="INFO">Page title is 'nopCommerce demo store. Home page title'.</msg>
-<arg>nopCommerce demo store. Home page title</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-05-27T23:17:07.549496" elapsed="0.013567"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-05-27T23:17:07.564080" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
-<arg>xpath://a[@class='ico-login']</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-27T23:17:07.563713" elapsed="0.645440"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-05-27T23:17:08.209850" level="INFO">${"email_txt"} = class:email</msg>
-<var>${"email_txt"}</var>
-<arg>class:email</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-05-27T23:17:08.209629" elapsed="0.000246"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-27T23:17:08.229968" level="INFO">Element 'class:email' is displayed.</msg>
-<arg>${"email_txt"}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-27T23:17:08.210211" elapsed="0.019870"/>
-</kw>
-<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
-<arg>${"email_txt"}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-27T23:17:08.230472" elapsed="0.018173"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-27T23:17:08.249094" level="INFO">Typing text 'JohnDavid@gmail.com' into text field 'class:email'.</msg>
-<arg>${"email_txt"}</arg>
-<arg>JohnDavid@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-27T23:17:08.248909" elapsed="0.080924"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-29T23:38:30.329380" level="INFO">Clicking element 'xpath://button[@id='confirmBtn']'.</msg>
+<arg>xpath://button[@id='confirmBtn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-29T23:38:30.329090" elapsed="0.079364"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-27T23:17:13.330800" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-27T23:17:08.330206" elapsed="5.000832"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>${"email_txt"}</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-27T23:17:13.332459" elapsed="0.046119"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-27T23:17:16.379571" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-05-29T23:38:33.409099" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-27T23:17:13.378883" elapsed="3.000814"/>
+<status status="PASS" start="2025-05-29T23:38:30.408794" elapsed="3.000442"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-27T23:17:16.380282" elapsed="2.107426"/>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-05-29T23:38:33.409730" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>dismiss</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-05-29T23:38:33.409594" elapsed="0.004596"/>
 </kw>
-<status status="PASS" start="2025-05-27T23:17:05.706710" elapsed="12.781669"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-29T23:38:38.416062" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-29T23:38:33.414831" elapsed="5.001416"/>
+</kw>
+<status status="PASS" start="2025-05-29T23:38:27.476833" elapsed="10.939771"/>
 </test>
-<status status="PASS" start="2025-05-27T23:17:05.515410" elapsed="12.976051"/>
+<status status="PASS" start="2025-05-29T23:38:27.264931" elapsed="11.152593"/>
 </suite>
 <statistics>
 <total>
@@ -82,7 +44,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="2-Inputbox" id="s1" pass="1" fail="0" skip="0">2-Inputbox</stat>
+<stat name="Alerts" id="s1" pass="1" fail="0" skip="0">Alerts</stat>
 </suite>
 </statistics>
 <errors>
