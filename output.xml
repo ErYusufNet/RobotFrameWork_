@@ -1,41 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-29T23:38:27.263051" rpa="false" schemaversion="5">
-<suite id="s1" name="Alerts" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\alerts.robot">
-<test id="s1-t1" name="HandlingAlerts" line="7">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-30T22:42:53.331494" rpa="false" schemaversion="5">
+<suite id="s1" name="Project1" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\projects\project1.robot">
+<test id="s1-t1" name="UserRegister" line="12">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-29T23:38:27.477787" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
-<arg>https://testautomationpractice.blogspot.com/</arg>
+<msg time="2025-05-30T22:42:53.493445" level="INFO">Opening browser 'chrome' to base url 'https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php'.</msg>
+<arg>https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-29T23:38:27.477603" elapsed="2.851117"/>
+<status status="PASS" start="2025-05-30T22:42:53.493276" elapsed="4.375815"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-29T23:38:30.329380" level="INFO">Clicking element 'xpath://button[@id='confirmBtn']'.</msg>
-<arg>xpath://button[@id='confirmBtn']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-29T23:38:30.329090" elapsed="0.079364"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-30T22:42:57.869571" elapsed="0.024644"/>
 </kw>
+<kw name="FillInformation">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-30T22:42:57.895560" level="INFO">Typing text 'yusuf' into text field 'id:firstname'.</msg>
+<arg>${firstname}</arg>
+<arg>yusuf</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T22:42:57.895287" elapsed="0.097669"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-30T22:42:57.993289" level="INFO">Typing text 'er' into text field 'id:lastname'.</msg>
+<arg>${surname}</arg>
+<arg>er</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T22:42:57.993102" elapsed="0.077850"/>
+</kw>
+<status status="PASS" start="2025-05-30T22:42:57.894610" elapsed="0.176447"/>
+</kw>
+<kw name="Verify">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-05-30T22:42:58.088371" level="INFO">Element 'id:firstname' is displayed.</msg>
+<arg>${firstname}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-30T22:42:58.071785" elapsed="0.016666"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${firstname}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-30T22:42:58.088574" elapsed="0.018191"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-05-30T22:42:58.121012" level="INFO">Element 'id:lastname' is displayed.</msg>
+<arg>${surname}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-30T22:42:58.106944" elapsed="0.014149"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${surname}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-30T22:42:58.121219" elapsed="0.015293"/>
+</kw>
+<status status="PASS" start="2025-05-30T22:42:58.071467" elapsed="0.065145"/>
+</kw>
+<kw name="IdType">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-29T23:38:33.409099" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
+<msg time="2025-05-30T22:42:59.138190" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-29T23:38:30.408794" elapsed="3.000442"/>
+<status status="PASS" start="2025-05-30T22:42:58.137357" elapsed="1.001151"/>
 </kw>
-<kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2025-05-29T23:38:33.409730" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<arg>dismiss</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2025-05-29T23:38:33.409594" elapsed="0.004596"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id:passport</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-05-30T22:42:59.139004" elapsed="0.295857"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-30T22:42:59.435347" level="INFO">Selecting checkbox 'id:passport'.</msg>
+<arg>id:passport</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-30T22:42:59.435107" elapsed="0.119802"/>
+</kw>
+<status status="PASS" start="2025-05-30T22:42:58.137057" elapsed="1.418122"/>
+</kw>
+<kw name="Birth">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-30T22:42:59.589034" level="INFO">Selecting options from selection list 'id:dob_month' by label September.</msg>
+<arg>id:dob_month</arg>
+<arg>September</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-30T22:42:59.588813" elapsed="0.100484"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-30T22:42:59.689847" level="INFO">Selecting options from selection list 'id:dob_date' by label 15.</msg>
+<arg>id:dob_date</arg>
+<arg>15</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-30T22:42:59.689588" elapsed="0.083192"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-30T22:42:59.773201" level="INFO">Selecting options from selection list 'id:dob_year' by label 1997.</msg>
+<arg>id:dob_year</arg>
+<arg>1997</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-30T22:42:59.772994" elapsed="0.067155"/>
+</kw>
+<status status="PASS" start="2025-05-30T22:42:59.588451" elapsed="0.251832"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-29T23:38:38.416062" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-30T22:43:04.841663" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-29T23:38:33.414831" elapsed="5.001416"/>
+<status status="PASS" start="2025-05-30T22:42:59.840681" elapsed="5.001278"/>
 </kw>
-<status status="PASS" start="2025-05-29T23:38:27.476833" elapsed="10.939771"/>
+<status status="PASS" start="2025-05-30T22:42:53.492564" elapsed="11.350494"/>
 </test>
-<status status="PASS" start="2025-05-29T23:38:27.264931" elapsed="11.152593"/>
+<status status="PASS" start="2025-05-30T22:42:53.332369" elapsed="11.513223"/>
 </suite>
 <statistics>
 <total>
@@ -44,7 +116,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Alerts" id="s1" pass="1" fail="0" skip="0">Alerts</stat>
+<stat name="Project1" id="s1" pass="1" fail="0" skip="0">Project1</stat>
 </suite>
 </statistics>
 <errors>
