@@ -12,4 +12,3 @@ MultipleBrowser
     open browser    https://www.youtube.com/    chrome
     maximize browser window
     switch browser
-    $
