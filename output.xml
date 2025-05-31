@@ -1,113 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-30T22:42:53.331494" rpa="false" schemaversion="5">
-<suite id="s1" name="Project1" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\projects\project1.robot">
-<test id="s1-t1" name="UserRegister" line="12">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-31T22:05:58.069000" rpa="false" schemaversion="5">
+<suite id="s1" name="tabbedWindows" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\tabbedWindows.robot">
+<test id="s1-t1" name="MultipleBrowser" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-30T22:42:53.493445" level="INFO">Opening browser 'chrome' to base url 'https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php'.</msg>
-<arg>https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php</arg>
+<msg time="2025-05-31T22:05:58.285634" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<msg time="2025-05-31T22:06:00.202648" level="INFO">${google} = 1</msg>
+<var>${google}</var>
+<arg>https://www.google.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-30T22:42:53.493276" elapsed="4.375815"/>
+<status status="PASS" start="2025-05-31T22:05:58.285466" elapsed="1.917247"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-30T22:42:57.869571" elapsed="0.024644"/>
-</kw>
-<kw name="FillInformation">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-30T22:42:57.895560" level="INFO">Typing text 'yusuf' into text field 'id:firstname'.</msg>
-<arg>${firstname}</arg>
-<arg>yusuf</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-30T22:42:57.895287" elapsed="0.097669"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-30T22:42:57.993289" level="INFO">Typing text 'er' into text field 'id:lastname'.</msg>
-<arg>${surname}</arg>
-<arg>er</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-30T22:42:57.993102" elapsed="0.077850"/>
-</kw>
-<status status="PASS" start="2025-05-30T22:42:57.894610" elapsed="0.176447"/>
-</kw>
-<kw name="Verify">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-30T22:42:58.088371" level="INFO">Element 'id:firstname' is displayed.</msg>
-<arg>${firstname}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-30T22:42:58.071785" elapsed="0.016666"/>
-</kw>
-<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
-<arg>${firstname}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-30T22:42:58.088574" elapsed="0.018191"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-30T22:42:58.121012" level="INFO">Element 'id:lastname' is displayed.</msg>
-<arg>${surname}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-30T22:42:58.106944" elapsed="0.014149"/>
-</kw>
-<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
-<arg>${surname}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-30T22:42:58.121219" elapsed="0.015293"/>
-</kw>
-<status status="PASS" start="2025-05-30T22:42:58.071467" elapsed="0.065145"/>
-</kw>
-<kw name="IdType">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-30T22:42:59.138190" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-30T22:42:58.137357" elapsed="1.001151"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>id:passport</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-05-30T22:42:59.139004" elapsed="0.295857"/>
-</kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-05-30T22:42:59.435347" level="INFO">Selecting checkbox 'id:passport'.</msg>
-<arg>id:passport</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-30T22:42:59.435107" elapsed="0.119802"/>
-</kw>
-<status status="PASS" start="2025-05-30T22:42:58.137057" elapsed="1.418122"/>
-</kw>
-<kw name="Birth">
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-05-30T22:42:59.589034" level="INFO">Selecting options from selection list 'id:dob_month' by label September.</msg>
-<arg>id:dob_month</arg>
-<arg>September</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-05-30T22:42:59.588813" elapsed="0.100484"/>
-</kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-05-30T22:42:59.689847" level="INFO">Selecting options from selection list 'id:dob_date' by label 15.</msg>
-<arg>id:dob_date</arg>
-<arg>15</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-05-30T22:42:59.689588" elapsed="0.083192"/>
-</kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-05-30T22:42:59.773201" level="INFO">Selecting options from selection list 'id:dob_year' by label 1997.</msg>
-<arg>id:dob_year</arg>
-<arg>1997</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-05-30T22:42:59.772994" elapsed="0.067155"/>
-</kw>
-<status status="PASS" start="2025-05-30T22:42:59.588451" elapsed="0.251832"/>
+<status status="PASS" start="2025-05-31T22:06:00.203103" elapsed="0.034221"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-30T22:43:04.841663" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-05-31T22:06:02.239075" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-30T22:42:59.840681" elapsed="5.001278"/>
+<status status="PASS" start="2025-05-31T22:06:00.237843" elapsed="2.001503"/>
 </kw>
-<status status="PASS" start="2025-05-30T22:42:53.492564" elapsed="11.350494"/>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-31T22:06:02.240957" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<msg time="2025-05-31T22:06:05.401348" level="INFO">${youtube} = 2</msg>
+<var>${youtube}</var>
+<arg>https://www.youtube.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-31T22:06:02.240333" elapsed="3.161068"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-31T22:06:05.401815" elapsed="0.038895"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-31T22:06:07.442006" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-31T22:06:05.441109" elapsed="2.001094"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>${google}</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-05-31T22:06:07.442670" elapsed="0.000366"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-31T22:06:09.443768" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-31T22:06:07.443299" elapsed="2.000598"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>${youtube}</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-05-31T22:06:09.444409" elapsed="0.000278"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-31T22:06:11.445971" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-31T22:06:09.444988" elapsed="2.001200"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>${google}</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-05-31T22:06:11.446609" elapsed="0.000322"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-31T22:06:13.447585" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-31T22:06:11.447209" elapsed="2.000508"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>${youtube}</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-05-31T22:06:13.448080" elapsed="0.000445"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-31T22:06:15.449542" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-31T22:06:13.448956" elapsed="2.000754"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-31T22:06:15.450367" elapsed="4.485048"/>
+</kw>
+<status status="PASS" start="2025-05-31T22:05:58.284795" elapsed="21.651182"/>
 </test>
-<status status="PASS" start="2025-05-30T22:42:53.332369" elapsed="11.513223"/>
+<status status="PASS" start="2025-05-31T22:05:58.069917" elapsed="21.867620"/>
 </suite>
 <statistics>
 <total>
@@ -116,7 +99,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Project1" id="s1" pass="1" fail="0" skip="0">Project1</stat>
+<stat name="tabbedWindows" id="s1" pass="1" fail="0" skip="0">tabbedWindows</stat>
 </suite>
 </statistics>
 <errors>

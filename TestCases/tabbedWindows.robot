@@ -11,12 +11,18 @@ MultipleBrowser
 
     open browser    https://www.youtube.com/    chrome
     maximize browser window
-    switch browser  1
+    switch browser  2
     ${title}=   get title
     log to console    ${title}
 
-    switch browser    2
+    switch browser    1
+    sleep
     ${title2}=      get title
     log to console    ${title2}
+
+    sleep    5
+    close all browsers
+
+
 
 
