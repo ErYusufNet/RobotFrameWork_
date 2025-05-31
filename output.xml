@@ -1,41 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-31T23:43:01.558447" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-31T23:49:04.164344" rpa="false" schemaversion="5">
 <suite id="s1" name="MouseOperations" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\MouseOperations.robot">
 <test id="s1-t1" name="MouseActions" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-31T23:43:01.790403" level="INFO">Opening browser 'chrome' to base url 'http://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
+<msg time="2025-05-31T23:49:04.358080" level="INFO">Opening browser 'chrome' to base url 'http://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
 <arg>http://swisnl.github.io/jQuery-contextMenu/demo.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-31T23:43:01.790226" elapsed="1.814177"/>
+<status status="PASS" start="2025-05-31T23:49:04.357918" elapsed="1.672461"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-31T23:43:03.604817" elapsed="0.022774"/>
+<status status="PASS" start="2025-05-31T23:49:06.030824" elapsed="0.050936"/>
 </kw>
 <kw name="Open Context Menu" owner="SeleniumLibrary">
 <arg>xpath:/html/body/div/section/div/div/div/p/span</arg>
 <doc>Opens the context menu on the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-31T23:43:03.627974" elapsed="0.295321"/>
+<status status="PASS" start="2025-05-31T23:49:06.082262" elapsed="0.318212"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-31T23:43:08.924759" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-31T23:49:11.401717" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-31T23:43:03.923695" elapsed="5.001368"/>
+<status status="PASS" start="2025-05-31T23:49:06.400904" elapsed="5.001019"/>
 </kw>
-<status status="PASS" start="2025-05-31T23:43:01.789363" elapsed="7.136417"/>
+<status status="PASS" start="2025-05-31T23:49:04.357150" elapsed="7.045242"/>
 </test>
-<status status="PASS" start="2025-05-31T23:43:01.559366" elapsed="7.369456"/>
+<test id="s1-t2" name="DoubleClick" line="11">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-31T23:49:11.406425" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-31T23:49:11.406201" elapsed="2.036124"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-31T23:49:13.442786" elapsed="0.003963"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-31T23:49:13.447265" level="INFO">Double clicking element 'xpath://button[normalize-space()='Copy Text']'.</msg>
+<arg>xpath://button[normalize-space()='Copy Text']</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-31T23:49:13.447063" elapsed="0.299943"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-31T23:49:18.748172" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-31T23:49:13.747313" elapsed="5.001063"/>
+</kw>
+<status status="PASS" start="2025-05-31T23:49:11.405511" elapsed="7.343326"/>
+</test>
+<status status="PASS" start="2025-05-31T23:49:04.165346" elapsed="14.585262"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="MouseOperations" id="s1" pass="1" fail="0" skip="0">MouseOperations</stat>
+<stat name="MouseOperations" id="s1" pass="2" fail="0" skip="0">MouseOperations</stat>
 </suite>
 </statistics>
 <errors>
