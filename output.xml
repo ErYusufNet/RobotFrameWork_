@@ -1,64 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-31T23:26:04.084479" rpa="false" schemaversion="5">
-<suite id="s1" name="CaptureScreen" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\CaptureScreen.robot">
-<test id="s1-t1" name="Login" line="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-31T23:43:01.558447" rpa="false" schemaversion="5">
+<suite id="s1" name="MouseOperations" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\MouseOperations.robot">
+<test id="s1-t1" name="MouseActions" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-31T23:26:04.248354" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<msg time="2025-05-31T23:43:01.790403" level="INFO">Opening browser 'chrome' to base url 'http://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
+<arg>http://swisnl.github.io/jQuery-contextMenu/demo.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-31T23:26:04.248164" elapsed="4.003125"/>
+<status status="PASS" start="2025-05-31T23:43:01.790226" elapsed="1.814177"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-31T23:26:08.251783" elapsed="0.028652"/>
+<status status="PASS" start="2025-05-31T23:43:03.604817" elapsed="0.022774"/>
 </kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>name:username</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-31T23:26:08.280879" elapsed="0.476558"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-31T23:26:08.758005" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
-<arg>name:username</arg>
-<arg>Admin</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-31T23:26:08.757777" elapsed="0.062494"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-31T23:26:08.820711" level="INFO">Typing text 'admin123' into text field 'name:password'.</msg>
-<arg>name:password</arg>
-<arg>admin123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-31T23:26:08.820548" elapsed="0.061857"/>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath:/html/body/div/section/div/div/div/p/span</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-31T23:43:03.627974" elapsed="0.295321"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-31T23:26:10.883228" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
+<msg time="2025-05-31T23:43:08.924759" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-31T23:26:08.882709" elapsed="2.000737"/>
+<status status="PASS" start="2025-05-31T23:43:03.923695" elapsed="5.001368"/>
 </kw>
-<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
-<msg time="2025-05-31T23:26:11.017598" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Logo.png"&gt;&lt;img src="Logo.png" width="400px"&gt;&lt;/a&gt;</msg>
-<arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[1]/img</arg>
-<arg>C:/Users/YusufEr/PycharmProjects/RobotFrameWork/Logo.png</arg>
-<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
-<status status="PASS" start="2025-05-31T23:26:10.883949" elapsed="0.133851"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-05-31T23:26:11.170437" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="LoginPage.png"&gt;&lt;img src="LoginPage.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>C:/Users/YusufEr/PycharmProjects/RobotFrameWork/LoginPage.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-05-31T23:26:11.018816" elapsed="0.151740"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-31T23:26:11.170902" elapsed="2.131630"/>
-</kw>
-<status status="PASS" start="2025-05-31T23:26:04.247352" elapsed="9.056341"/>
+<status status="PASS" start="2025-05-31T23:43:01.789363" elapsed="7.136417"/>
 </test>
-<status status="PASS" start="2025-05-31T23:26:04.085476" elapsed="9.220375"/>
+<status status="PASS" start="2025-05-31T23:43:01.559366" elapsed="7.369456"/>
 </suite>
 <statistics>
 <total>
@@ -67,7 +35,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="CaptureScreen" id="s1" pass="1" fail="0" skip="0">CaptureScreen</stat>
+<stat name="MouseOperations" id="s1" pass="1" fail="0" skip="0">MouseOperations</stat>
 </suite>
 </statistics>
 <errors>
