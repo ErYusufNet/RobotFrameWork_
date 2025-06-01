@@ -1,99 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-06-01T17:55:11.997104" rpa="false" schemaversion="5">
-<suite id="s1" name="MouseOperations" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\MouseOperations.robot">
-<test id="s1-t1" name="MouseActions" line="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-06-01T22:48:37.331616" rpa="false" schemaversion="5">
+<suite id="s1" name="ScrollingPage" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\ScrollingPage.robot">
+<test id="s1-t1" name="ScrollingTest" line="6">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-01T17:55:12.170440" level="INFO">Opening browser 'chrome' to base url 'http://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
-<arg>http://swisnl.github.io/jQuery-contextMenu/demo.html</arg>
+<msg time="2025-06-01T22:48:37.533251" level="INFO">Opening browser 'chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
+<arg>https://www.countries-ofthe-world.com/flags-of-the-world.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-01T17:55:12.170279" elapsed="1.635024"/>
+<status status="PASS" start="2025-06-01T22:48:37.533064" elapsed="2.011614"/>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-06-01T17:55:13.805786" elapsed="0.032164"/>
-</kw>
-<kw name="Open Context Menu" owner="SeleniumLibrary">
-<arg>xpath:/html/body/div/section/div/div/div/p/span</arg>
-<doc>Opens the context menu on the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-01T17:55:13.838467" elapsed="0.302244"/>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="ct-list"]/table[2]/tbody/tr[96]/td[1]/img</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-06-01T22:48:39.545325" elapsed="0.296407"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-01T17:55:17.142258" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
+<msg time="2025-06-01T22:48:40.842654" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-01T17:55:14.141074" elapsed="3.001375"/>
+<status status="PASS" start="2025-06-01T22:48:39.842096" elapsed="1.000654"/>
 </kw>
-<status status="PASS" start="2025-06-01T17:55:12.169576" elapsed="4.973477"/>
+<status status="PASS" start="2025-06-01T22:48:37.532352" elapsed="3.310722"/>
 </test>
-<test id="s1-t2" name="DoubleClick" line="11">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-06-01T17:55:17.145446" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
-<arg>https://testautomationpractice.blogspot.com/</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-06-01T17:55:17.145263" elapsed="1.497301"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-06-01T17:55:18.642963" elapsed="0.003145"/>
-</kw>
-<kw name="Double Click Element" owner="SeleniumLibrary">
-<msg time="2025-06-01T17:55:18.646664" level="INFO">Double clicking element 'xpath://button[normalize-space()='Copy Text']'.</msg>
-<arg>xpath://button[normalize-space()='Copy Text']</arg>
-<doc>Double clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-01T17:55:18.646444" elapsed="0.308629"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-01T17:55:21.957159" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-01T17:55:18.955615" elapsed="3.001689"/>
-</kw>
-<status status="PASS" start="2025-06-01T17:55:17.144781" elapsed="4.813891"/>
-</test>
-<test id="s1-t3" name="DragDrop" line="17">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-06-01T17:55:21.960521" level="INFO">Opening url 'http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html'</msg>
-<arg>http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-06-01T17:55:21.960343" elapsed="2.251480"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:box6</arg>
-<arg>timeout=10</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-06-01T17:55:24.212264" elapsed="0.023557"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id:box106</arg>
-<arg>timeout=10</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-06-01T17:55:24.236565" elapsed="0.018671"/>
-</kw>
-<kw name="Drag And Drop" owner="SeleniumLibrary">
-<arg>id:box6</arg>
-<arg>id:box106</arg>
-<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" start="2025-06-01T17:55:24.255697" elapsed="0.618330"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-01T17:55:29.875331" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-01T17:55:24.874508" elapsed="5.001032"/>
-</kw>
-<status status="PASS" start="2025-06-01T17:55:21.959638" elapsed="7.916871"/>
-</test>
-<status status="PASS" start="2025-06-01T17:55:11.998010" elapsed="17.880911"/>
+<status status="PASS" start="2025-06-01T22:48:37.332565" elapsed="3.511388"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="MouseOperations" id="s1" pass="3" fail="0" skip="0">MouseOperations</stat>
+<stat name="ScrollingPage" id="s1" pass="1" fail="0" skip="0">ScrollingPage</stat>
 </suite>
 </statistics>
 <errors>
