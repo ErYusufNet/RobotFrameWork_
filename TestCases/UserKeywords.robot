@@ -5,3 +5,5 @@ Library     SeleniumLibrary
 ${url}      http://www.newtours.demoaut.com/
 ${browser}      chrome
 
+*** Test Cases ***
+
