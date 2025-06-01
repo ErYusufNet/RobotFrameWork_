@@ -1,66 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-31T23:49:04.164344" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-06-01T17:55:11.997104" rpa="false" schemaversion="5">
 <suite id="s1" name="MouseOperations" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\MouseOperations.robot">
 <test id="s1-t1" name="MouseActions" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-31T23:49:04.358080" level="INFO">Opening browser 'chrome' to base url 'http://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
+<msg time="2025-06-01T17:55:12.170440" level="INFO">Opening browser 'chrome' to base url 'http://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
 <arg>http://swisnl.github.io/jQuery-contextMenu/demo.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-31T23:49:04.357918" elapsed="1.672461"/>
+<status status="PASS" start="2025-06-01T17:55:12.170279" elapsed="1.635024"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-31T23:49:06.030824" elapsed="0.050936"/>
+<status status="PASS" start="2025-06-01T17:55:13.805786" elapsed="0.032164"/>
 </kw>
 <kw name="Open Context Menu" owner="SeleniumLibrary">
 <arg>xpath:/html/body/div/section/div/div/div/p/span</arg>
 <doc>Opens the context menu on the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-31T23:49:06.082262" elapsed="0.318212"/>
+<status status="PASS" start="2025-06-01T17:55:13.838467" elapsed="0.302244"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-31T23:49:11.401717" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-06-01T17:55:17.142258" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-31T23:49:06.400904" elapsed="5.001019"/>
+<status status="PASS" start="2025-06-01T17:55:14.141074" elapsed="3.001375"/>
 </kw>
-<status status="PASS" start="2025-05-31T23:49:04.357150" elapsed="7.045242"/>
+<status status="PASS" start="2025-06-01T17:55:12.169576" elapsed="4.973477"/>
 </test>
 <test id="s1-t2" name="DoubleClick" line="11">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-31T23:49:11.406425" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
+<msg time="2025-06-01T17:55:17.145446" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
 <arg>https://testautomationpractice.blogspot.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-31T23:49:11.406201" elapsed="2.036124"/>
+<status status="PASS" start="2025-06-01T17:55:17.145263" elapsed="1.497301"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-31T23:49:13.442786" elapsed="0.003963"/>
+<status status="PASS" start="2025-06-01T17:55:18.642963" elapsed="0.003145"/>
 </kw>
 <kw name="Double Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-31T23:49:13.447265" level="INFO">Double clicking element 'xpath://button[normalize-space()='Copy Text']'.</msg>
+<msg time="2025-06-01T17:55:18.646664" level="INFO">Double clicking element 'xpath://button[normalize-space()='Copy Text']'.</msg>
 <arg>xpath://button[normalize-space()='Copy Text']</arg>
 <doc>Double clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-31T23:49:13.447063" elapsed="0.299943"/>
+<status status="PASS" start="2025-06-01T17:55:18.646444" elapsed="0.308629"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-31T23:49:18.748172" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-06-01T17:55:21.957159" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-01T17:55:18.955615" elapsed="3.001689"/>
+</kw>
+<status status="PASS" start="2025-06-01T17:55:17.144781" elapsed="4.813891"/>
+</test>
+<test id="s1-t3" name="DragDrop" line="17">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-06-01T17:55:21.960521" level="INFO">Opening url 'http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html'</msg>
+<arg>http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-06-01T17:55:21.960343" elapsed="2.251480"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:box6</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-01T17:55:24.212264" elapsed="0.023557"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:box106</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-01T17:55:24.236565" elapsed="0.018671"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:box6</arg>
+<arg>id:box106</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-06-01T17:55:24.255697" elapsed="0.618330"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-01T17:55:29.875331" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-31T23:49:13.747313" elapsed="5.001063"/>
+<status status="PASS" start="2025-06-01T17:55:24.874508" elapsed="5.001032"/>
 </kw>
-<status status="PASS" start="2025-05-31T23:49:11.405511" elapsed="7.343326"/>
+<status status="PASS" start="2025-06-01T17:55:21.959638" elapsed="7.916871"/>
 </test>
-<status status="PASS" start="2025-05-31T23:49:04.165346" elapsed="14.585262"/>
+<status status="PASS" start="2025-06-01T17:55:11.998010" elapsed="17.880911"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="MouseOperations" id="s1" pass="2" fail="0" skip="0">MouseOperations</stat>
+<stat name="MouseOperations" id="s1" pass="3" fail="0" skip="0">MouseOperations</stat>
 </suite>
 </statistics>
 <errors>
