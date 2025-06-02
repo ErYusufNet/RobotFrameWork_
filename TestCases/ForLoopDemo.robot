@@ -1,6 +1,6 @@
 *** Test Cases ***
-Forloop4
-    forloop4
+Forloop6
+    forloop6
 
 
 
@@ -32,6 +32,15 @@ Forloop5
     FOR     ${i}    IN    @{namelist}
     log to console    ${i}
     END
-Forloop6
+Forloop6    #exit for loop
+    @{items}     create list    1    2    3    4    5
+    FOR    ${i}     IN  @{items}
+    log to console    ${i}
+    exit for loop if    ${i}==3
+    END
+
+
+
+
 
 
