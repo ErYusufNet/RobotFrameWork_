@@ -32,6 +32,6 @@ Forloop5
     FOR     ${i}    IN    @{namelist}
     log to console    ${i}
     END
-
+Forloop6
 
 
