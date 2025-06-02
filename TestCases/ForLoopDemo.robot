@@ -1,5 +1,6 @@
 *** Test Cases ***
-
+Forloop4
+    forloop4
 
 
 
@@ -21,4 +22,16 @@ ForLoop3withList
     FOR    ${i}  IN    @{items}
     log to console    ${i}
     END
+Forloop4
+    FOR    ${i}     IN    john  david   smith
+    LOG TO CONSOLE    ${i}
+    END
+
+Forloop5
+    @{namelist}     CREATE LIST    john     david   smith   scott
+    FOR     ${i}    IN    @{namelist}
+    log to console    ${i}
+    END
+
+
 
