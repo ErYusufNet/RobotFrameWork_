@@ -1,47 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-06-02T11:04:09.321557" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-06-02T12:43:27.515218" rpa="false" schemaversion="5">
 <suite id="s1" name="ForLoopDemo" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\ForLoopDemo.robot">
-<test id="s1-t1" name="Forloop4" line="2">
-<kw name="Forloop4">
+<test id="s1-t1" name="Forloop6" line="2">
+<kw name="Forloop6">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-06-02T12:43:27.536950" level="INFO">@{items} = [ 1 | 2 | 3 | 4 | 5 ]</msg>
+<var>@{items}</var>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>4</arg>
+<arg>5</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-06-02T12:43:27.536611" elapsed="0.000382"/>
+</kw>
 <for flavor="IN">
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-06-02T11:04:09.342469" elapsed="0.000357"/>
+<status status="PASS" start="2025-06-02T12:43:27.537266" elapsed="0.000358"/>
 </kw>
-<var name="${i}">john</var>
-<status status="PASS" start="2025-06-02T11:04:09.342320" elapsed="0.000560"/>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-06-02T12:43:27.537835" elapsed="0.000330"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-06-02T12:43:27.537198" elapsed="0.001003"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-06-02T11:04:09.343018" elapsed="0.000243"/>
+<status status="PASS" start="2025-06-02T12:43:27.538341" elapsed="0.000414"/>
 </kw>
-<var name="${i}">david</var>
-<status status="PASS" start="2025-06-02T11:04:09.342950" elapsed="0.000365"/>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-06-02T12:43:27.538868" elapsed="0.000284"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-06-02T12:43:27.538283" elapsed="0.000899"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-06-02T11:04:09.343429" elapsed="0.000229"/>
+<status status="PASS" start="2025-06-02T12:43:27.539294" elapsed="0.000264"/>
 </kw>
-<var name="${i}">smith</var>
-<status status="PASS" start="2025-06-02T11:04:09.343381" elapsed="0.000356"/>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-06-02T12:43:27.539773" level="INFO">Exiting for loop altogether.</msg>
+<arg>${i}==3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-06-02T12:43:27.539636" elapsed="0.000193"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-06-02T12:43:27.539247" elapsed="0.000612"/>
 </iter>
 <var>${i}</var>
-<value>john</value>
-<value>david</value>
-<value>smith</value>
-<status status="PASS" start="2025-06-02T11:04:09.342230" elapsed="0.001538"/>
+<value>@{items}</value>
+<status status="PASS" start="2025-06-02T12:43:27.537075" elapsed="0.002806"/>
 </for>
-<status status="PASS" start="2025-06-02T11:04:09.341971" elapsed="0.001856"/>
+<status status="PASS" start="2025-06-02T12:43:27.536216" elapsed="0.003714"/>
 </kw>
-<status status="PASS" start="2025-06-02T11:04:09.341483" elapsed="0.002561"/>
+<status status="PASS" start="2025-06-02T12:43:27.534977" elapsed="0.005124"/>
 </test>
-<status status="PASS" start="2025-06-02T11:04:09.322463" elapsed="0.022280"/>
+<status status="PASS" start="2025-06-02T12:43:27.516134" elapsed="0.024602"/>
 </suite>
 <statistics>
 <total>
