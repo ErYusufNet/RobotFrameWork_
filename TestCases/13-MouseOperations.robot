@@ -20,3 +20,4 @@ DragDrop
     wait until element is visible    id:box106    timeout=10    # Wait until drop target ("Italy") is visible
     drag and drop    id:box6    id:box106    # Drag "Rome" and drop on "Italy"
     sleep    5    # Wait to observe the drag-and-drop result
+
