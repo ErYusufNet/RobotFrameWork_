@@ -13,3 +13,4 @@ Login
     Capture Element Screenshot    xpath://*[@id="app"]/div[1]/div/div[1]/div/div[1]/img     C:/Users/YusufEr/PycharmProjects/RobotFrameWork/Logo.png
     Capture Page Screenshot     C:/Users/YusufEr/PycharmProjects/RobotFrameWork/LoginPage.png
     Close Browser
+
