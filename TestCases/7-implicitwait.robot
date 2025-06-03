@@ -22,6 +22,7 @@ RegTest
     click button    id:register-button
 
 
+
 *** Keywords ***
 Fill Personal Information
     input text    ${name}   yusuf
