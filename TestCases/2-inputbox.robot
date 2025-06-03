@@ -5,6 +5,7 @@ Library    SeleniumLibrary    # Enables browser automation (clicks, typing, etc.
 ${browser}    chrome                             # Browser type
 ${url}        https://demo.nopcommerce.com/      # Website to test
 
+
 *** Test Cases ***
 TestingInputBox
     Open Browser    ${url}    ${browser}         # Open the site in Chrome
