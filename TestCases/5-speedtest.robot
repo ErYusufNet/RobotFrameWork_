@@ -11,6 +11,7 @@ ${password2}   id:ConfirmPassword
 
 
 
+
 *** Test Cases ***
 RegTest
     ${spead}=   get selenium speed
