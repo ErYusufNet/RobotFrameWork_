@@ -4,6 +4,7 @@
 Library    SeleniumLibrary    # SeleniumLibrary'i projeye dahil ediyoruz.
 
 
+
 *** Variables ***
 ${browser}         chrome      # Kullanılacak tarayıcı
 ${url}             https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php  # Test edilecek sayfa
