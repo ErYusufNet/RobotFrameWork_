@@ -6,6 +6,7 @@ Library    SeleniumLibrary
 ${browser}  chrome
 ${url}  https://demo.nopcommerce.com/
 
+
 *** Test Cases ***
 LoginTest
     open browser    ${url}  ${browser}
