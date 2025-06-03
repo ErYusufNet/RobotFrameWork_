@@ -21,3 +21,4 @@ DragDrop
     drag and drop    id:box6    id:box106    # Drag "Rome" and drop on "Italy"
     sleep    5    # Wait to observe the drag-and-drop result
 
+
