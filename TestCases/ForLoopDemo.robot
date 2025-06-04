@@ -2,9 +2,6 @@
 Forloop6
     forloop6
 
-
-
-
 *** Keywords ***
 ForLoop1
     FOR    ${i}    IN RANGE    1    10
