@@ -13,7 +13,6 @@ ForLoop2
         LOG TO CONSOLE    ${i}
     END
 
-
 ForLoop3withList
     @{items}    create list    1    2   3   4   5
     FOR    ${i}  IN    @{items}
