@@ -12,6 +12,7 @@ ${password2}   id:ConfirmPassword
 
 
 
+
 *** Test Cases ***
 RegTest
 
