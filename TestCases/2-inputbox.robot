@@ -8,6 +8,7 @@ ${url}        https://demo.nopcommerce.com/      # Website to test
 
 
 
+
 *** Test Cases ***
 TestingInputBox
     Open Browser    ${url}    ${browser}         # Open the site in Chrome
