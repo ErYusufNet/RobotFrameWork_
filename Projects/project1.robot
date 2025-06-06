@@ -6,12 +6,6 @@ Library    SeleniumLibrary
 *** Variables ***
 ${firstname}    id:firstname
 ${surname}      id:lastname
-
-
-
-
-
-
 *** Test Cases ***
 UserRegister
 
