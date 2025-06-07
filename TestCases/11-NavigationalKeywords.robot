@@ -4,6 +4,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 
+
 *** Test Cases ***
 NavigationTest
     open browser    https://www.google.com/     chrome
