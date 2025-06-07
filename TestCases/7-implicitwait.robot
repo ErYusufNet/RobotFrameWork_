@@ -9,10 +9,6 @@ ${password}    id:Password
 ${password2}   id:ConfirmPassword
 
 
-
-
-
-
 *** Test Cases ***
 RegTest
 
