@@ -27,8 +27,6 @@ RegTest
 
 
 
-
-
 *** Keywords ***
 Fill Personal Information
     input text    ${name}   yusuf
