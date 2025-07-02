@@ -7,6 +7,7 @@ Library    SeleniumLibrary
 
 
 
+
 *** Test Cases ***
 MyTestCase
     open browser  https://demowebshop.tricentis.com/register    chrome

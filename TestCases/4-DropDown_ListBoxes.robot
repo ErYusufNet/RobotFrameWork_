@@ -6,6 +6,7 @@ Library    SeleniumLibrary
 
 
 
+
 *** Variables ***
 ${browser}         chrome
 ${url}             https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php
