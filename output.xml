@@ -1,81 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-06-02T12:43:27.515218" rpa="false" schemaversion="5">
-<suite id="s1" name="ForLoopDemo" source="C:\Users\YusufEr\PycharmProjects\RobotFrameWork\TestCases\ForLoopDemo.robot">
-<test id="s1-t1" name="Forloop6" line="2">
-<kw name="Forloop6">
-<kw name="Create List" owner="BuiltIn">
-<msg time="2025-06-02T12:43:27.536950" level="INFO">@{items} = [ 1 | 2 | 3 | 4 | 5 ]</msg>
-<var>@{items}</var>
-<arg>1</arg>
-<arg>2</arg>
-<arg>3</arg>
-<arg>4</arg>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-07-17T20:11:54.344265" rpa="false" schemaversion="5">
+<suite id="s1" name="T" source="C:\Users\yusuf\PycharmProjects\RobotFrameWork_\Projects\t.robot">
+<test id="s1-t1" name="Testing" line="17">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-17T20:11:54.590431" level="INFO">Opening browser 'chrome' to base url 'https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-17T20:11:54.590193" elapsed="3.580683"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-17T20:11:58.171251" elapsed="0.059978"/>
+</kw>
+<kw name="Verify Name Fields">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-07-17T20:11:58.264475" level="INFO">Element 'id:firstname' is displayed.</msg>
+<arg>${name}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-17T20:11:58.233561" elapsed="0.031044"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${name}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-07-17T20:11:58.264799" elapsed="0.029297"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-07-17T20:11:58.315588" level="INFO">Element 'id:lastname' is displayed.</msg>
+<arg>${surname}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-17T20:11:58.294335" elapsed="0.021412"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${surname}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-07-17T20:11:58.316031" elapsed="0.022449"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-07-17T20:11:58.534400" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-17T20:11:58.534608" level="FAIL">Element with locator 'id:fathername' not found.</msg>
+<arg>${fathername}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-07-17T20:11:58.338764" elapsed="0.198165">Element with locator 'id:fathername' not found.</status>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${fathername}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2025-07-17T20:11:58.537113" elapsed="0.000038"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${mothername}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-07-17T20:11:58.537245" elapsed="0.000093"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${mothername}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2025-07-17T20:11:58.537515" elapsed="0.000034"/>
+</kw>
+<status status="FAIL" start="2025-07-17T20:11:58.232930" elapsed="0.304805">Element with locator 'id:fathername' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
 <arg>5</arg>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-06-02T12:43:27.536611" elapsed="0.000382"/>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-07-17T20:11:58.538106" elapsed="0.000042"/>
 </kw>
-<for flavor="IN">
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-06-02T12:43:27.537266" elapsed="0.000358"/>
+<kw name="Fill Personal Information">
+<status status="NOT RUN" start="2025-07-17T20:11:58.538425" elapsed="0.000033"/>
 </kw>
-<kw name="Exit For Loop If" owner="BuiltIn">
-<arg>${i}==3</arg>
-<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-06-02T12:43:27.537835" elapsed="0.000330"/>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-07-17T20:11:58.538608" elapsed="0.000026"/>
 </kw>
-<var name="${i}">1</var>
-<status status="PASS" start="2025-06-02T12:43:27.537198" elapsed="0.001003"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-06-02T12:43:27.538341" elapsed="0.000414"/>
+<kw name="Select Account Type And Passport">
+<status status="NOT RUN" start="2025-07-17T20:11:58.538783" elapsed="0.000024"/>
 </kw>
-<kw name="Exit For Loop If" owner="BuiltIn">
-<arg>${i}==3</arg>
-<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-06-02T12:43:27.538868" elapsed="0.000284"/>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-07-17T20:11:58.538909" elapsed="0.000021"/>
 </kw>
-<var name="${i}">2</var>
-<status status="PASS" start="2025-06-02T12:43:27.538283" elapsed="0.000899"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-06-02T12:43:27.539294" elapsed="0.000264"/>
+<kw name="Enter Identity Number">
+<status status="NOT RUN" start="2025-07-17T20:11:58.539058" elapsed="0.000022"/>
 </kw>
-<kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2025-06-02T12:43:27.539773" level="INFO">Exiting for loop altogether.</msg>
-<arg>${i}==3</arg>
-<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2025-06-02T12:43:27.539636" elapsed="0.000193"/>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-07-17T20:11:58.539237" elapsed="0.000023"/>
 </kw>
-<var name="${i}">3</var>
-<status status="PASS" start="2025-06-02T12:43:27.539247" elapsed="0.000612"/>
-</iter>
-<var>${i}</var>
-<value>@{items}</value>
-<status status="PASS" start="2025-06-02T12:43:27.537075" elapsed="0.002806"/>
-</for>
-<status status="PASS" start="2025-06-02T12:43:27.536216" elapsed="0.003714"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-07-17T20:11:58.539370" elapsed="0.000022"/>
 </kw>
-<status status="PASS" start="2025-06-02T12:43:27.534977" elapsed="0.005124"/>
+<status status="FAIL" start="2025-07-17T20:11:54.589236" elapsed="3.950354">Element with locator 'id:fathername' not found.</status>
 </test>
-<status status="PASS" start="2025-06-02T12:43:27.516134" elapsed="0.024602"/>
+<status status="FAIL" start="2025-07-17T20:11:54.345452" elapsed="4.194959"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="ForLoopDemo" id="s1" pass="1" fail="0" skip="0">ForLoopDemo</stat>
+<stat name="T" id="s1" pass="0" fail="1" skip="0">T</stat>
 </suite>
 </statistics>
 <errors>
