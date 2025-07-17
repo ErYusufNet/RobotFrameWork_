@@ -16,16 +16,25 @@ ${url}             https://proleed.academy/exercises/selenium/automation-practic
 Testing
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
-    select from list by index   id:dob_month    9
-    select from list by index   id:dob_date     15
-    select from list by label   id:dob_year     1997
-    scroll element into view    id:single
-    select radio button    marital_status   single
-    sleep    5
+    Select From List By Index    prefix    1
+    Input Text    id:firstname    Yusuf
+    Input Text    id:lastname    Er
+    Select Radio Button   accountype    saving
+
+    Select Checkbox    id:passport
+    Select Checkbox    id:studentid
+    Input Text    id:identity_number    989898
+    Select From List By Label  dob_month  September
+    Select From List By Index   dob_date     15
+    Select From List By Label    dob_year    1997
+    Select Radio Button    marital_status    divorced
+    Select From List By Label
+    
+    Sleep    10
 
 
 
 
 *** Keywords ***
-#robot TestCases\4-DropDown_listBoxes.robot
+
 

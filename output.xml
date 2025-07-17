@@ -1,110 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-07-17T20:11:54.344265" rpa="false" schemaversion="5">
-<suite id="s1" name="T" source="C:\Users\yusuf\PycharmProjects\RobotFrameWork_\Projects\t.robot">
-<test id="s1-t1" name="Testing" line="17">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-07-17T21:28:15.473559" rpa="false" schemaversion="5">
+<suite id="s1" name="4-DropDown listBoxes" source="C:\Users\yusuf\PycharmProjects\RobotFrameWork_\TestCases\4-DropDown_listBoxes.robot">
+<test id="s1-t1" name="Testing" line="16">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-17T20:11:54.590431" level="INFO">Opening browser 'chrome' to base url 'https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php'.</msg>
+<msg time="2025-07-17T21:28:15.920535" level="INFO">Opening browser 'chrome' to base url 'https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-07-17T20:11:54.590193" elapsed="3.580683"/>
+<status status="PASS" start="2025-07-17T21:28:15.920242" elapsed="4.228422"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-07-17T20:11:58.171251" elapsed="0.059978"/>
+<status status="PASS" start="2025-07-17T21:28:20.149123" elapsed="0.032109"/>
 </kw>
-<kw name="Verify Name Fields">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-07-17T20:11:58.264475" level="INFO">Element 'id:firstname' is displayed.</msg>
-<arg>${name}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-07-17T20:11:58.233561" elapsed="0.031044"/>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-07-17T21:28:20.182493" level="INFO">Selecting options from selection list 'prefix' by index 1.</msg>
+<arg>prefix</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-07-17T21:28:20.181866" elapsed="0.186575"/>
 </kw>
-<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
-<arg>${name}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-07-17T20:11:58.264799" elapsed="0.029297"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-17T21:28:20.369539" level="INFO">Typing text 'Yusuf' into text field 'id:firstname'.</msg>
+<arg>id:firstname</arg>
+<arg>Yusuf</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T21:28:20.369053" elapsed="0.130926"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-07-17T20:11:58.315588" level="INFO">Element 'id:lastname' is displayed.</msg>
-<arg>${surname}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-07-17T20:11:58.294335" elapsed="0.021412"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-17T21:28:20.500790" level="INFO">Typing text 'Er' into text field 'id:lastname'.</msg>
+<arg>id:lastname</arg>
+<arg>Er</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T21:28:20.500515" elapsed="0.075892"/>
 </kw>
-<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
-<arg>${surname}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-07-17T20:11:58.316031" elapsed="0.022449"/>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-07-17T21:28:20.576995" level="INFO">Selecting 'saving' from radio button 'accountype'.</msg>
+<arg>accountype</arg>
+<arg>saving</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-07-17T21:28:20.576807" elapsed="0.015398"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-07-17T20:11:58.534400" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-07-17T20:11:58.534608" level="FAIL">Element with locator 'id:fathername' not found.</msg>
-<arg>${fathername}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-07-17T20:11:58.338764" elapsed="0.198165">Element with locator 'id:fathername' not found.</status>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-07-17T21:28:20.592722" level="INFO">Selecting checkbox 'id:passport'.</msg>
+<arg>id:passport</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T21:28:20.592527" elapsed="0.075586"/>
 </kw>
-<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
-<arg>${fathername}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="NOT RUN" start="2025-07-17T20:11:58.537113" elapsed="0.000038"/>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-07-17T21:28:20.668668" level="INFO">Selecting checkbox 'id:studentid'.</msg>
+<arg>id:studentid</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T21:28:20.668462" elapsed="0.091284"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<arg>${mothername}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-07-17T20:11:58.537245" elapsed="0.000093"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-17T21:28:20.760214" level="INFO">Typing text '989898' into text field 'id:identity_number'.</msg>
+<arg>id:identity_number</arg>
+<arg>989898</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-17T21:28:20.760038" elapsed="0.058561"/>
 </kw>
-<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
-<arg>${mothername}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="NOT RUN" start="2025-07-17T20:11:58.537515" elapsed="0.000034"/>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-07-17T21:28:20.819313" level="INFO">Selecting options from selection list 'dob_month' by label September.</msg>
+<arg>dob_month</arg>
+<arg>September</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-07-17T21:28:20.819068" elapsed="0.077298"/>
 </kw>
-<status status="FAIL" start="2025-07-17T20:11:58.232930" elapsed="0.304805">Element with locator 'id:fathername' not found.</status>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-07-17T21:28:20.896994" level="INFO">Selecting options from selection list 'dob_date' by index 15.</msg>
+<arg>dob_date</arg>
+<arg>15</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-07-17T21:28:20.896754" elapsed="0.113182"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-07-17T20:11:58.538106" elapsed="0.000042"/>
-</kw>
-<kw name="Fill Personal Information">
-<status status="NOT RUN" start="2025-07-17T20:11:58.538425" elapsed="0.000033"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-07-17T20:11:58.538608" elapsed="0.000026"/>
-</kw>
-<kw name="Select Account Type And Passport">
-<status status="NOT RUN" start="2025-07-17T20:11:58.538783" elapsed="0.000024"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-07-17T20:11:58.538909" elapsed="0.000021"/>
-</kw>
-<kw name="Enter Identity Number">
-<status status="NOT RUN" start="2025-07-17T20:11:58.539058" elapsed="0.000022"/>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-07-17T21:28:21.010678" level="INFO">Selecting options from selection list 'dob_year' by label 1997.</msg>
+<arg>dob_year</arg>
+<arg>1997</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-07-17T21:28:21.010392" elapsed="0.071455"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<arg>5</arg>
+<msg time="2025-07-17T21:28:31.083195" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-07-17T20:11:58.539237" elapsed="0.000023"/>
+<status status="PASS" start="2025-07-17T21:28:21.082374" elapsed="10.001321"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-07-17T20:11:58.539370" elapsed="0.000022"/>
-</kw>
-<status status="FAIL" start="2025-07-17T20:11:54.589236" elapsed="3.950354">Element with locator 'id:fathername' not found.</status>
+<status status="PASS" start="2025-07-17T21:28:15.919150" elapsed="15.166100"/>
 </test>
-<status status="FAIL" start="2025-07-17T20:11:54.345452" elapsed="4.194959"/>
+<status status="PASS" start="2025-07-17T21:28:15.474866" elapsed="15.614934"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="T" id="s1" pass="0" fail="1" skip="0">T</stat>
+<stat name="4-DropDown listBoxes" id="s1" pass="1" fail="0" skip="0">4-DropDown listBoxes</stat>
 </suite>
 </statistics>
 <errors>
