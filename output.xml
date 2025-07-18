@@ -1,95 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-07-17T21:28:15.473559" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-07-18T13:19:54.873161" rpa="false" schemaversion="5">
 <suite id="s1" name="4-DropDown listBoxes" source="C:\Users\yusuf\PycharmProjects\RobotFrameWork_\TestCases\4-DropDown_listBoxes.robot">
 <test id="s1-t1" name="Testing" line="16">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:15.920535" level="INFO">Opening browser 'chrome' to base url 'https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php'.</msg>
+<msg time="2025-07-18T13:19:55.287952" level="INFO">Opening browser 'chrome' to base url 'https://proleed.academy/exercises/selenium/automation-practice-form-with-radio-button-check-boxes-and-drop-down.php'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-07-17T21:28:15.920242" elapsed="4.228422"/>
+<status status="PASS" start="2025-07-18T13:19:55.287698" elapsed="6.591797"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-07-17T21:28:20.149123" elapsed="0.032109"/>
+<status status="PASS" start="2025-07-18T13:20:01.879958" elapsed="0.038918"/>
 </kw>
 <kw name="Select From List By Index" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:20.182493" level="INFO">Selecting options from selection list 'prefix' by index 1.</msg>
+<msg time="2025-07-18T13:20:01.920386" level="INFO">Selecting options from selection list 'prefix' by index 1.</msg>
 <arg>prefix</arg>
 <arg>1</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="PASS" start="2025-07-17T21:28:20.181866" elapsed="0.186575"/>
+<status status="PASS" start="2025-07-18T13:20:01.919744" elapsed="0.228510"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:20.369539" level="INFO">Typing text 'Yusuf' into text field 'id:firstname'.</msg>
+<msg time="2025-07-18T13:20:02.149080" level="INFO">Typing text 'Yusuf' into text field 'id:firstname'.</msg>
 <arg>id:firstname</arg>
 <arg>Yusuf</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-17T21:28:20.369053" elapsed="0.130926"/>
+<status status="PASS" start="2025-07-18T13:20:02.148751" elapsed="0.116179"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:20.500790" level="INFO">Typing text 'Er' into text field 'id:lastname'.</msg>
+<msg time="2025-07-18T13:20:02.265835" level="INFO">Typing text 'Er' into text field 'id:lastname'.</msg>
 <arg>id:lastname</arg>
 <arg>Er</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-17T21:28:20.500515" elapsed="0.075892"/>
+<status status="PASS" start="2025-07-18T13:20:02.265459" elapsed="0.082899"/>
 </kw>
 <kw name="Select Radio Button" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:20.576995" level="INFO">Selecting 'saving' from radio button 'accountype'.</msg>
+<msg time="2025-07-18T13:20:02.349078" level="INFO">Selecting 'saving' from radio button 'accountype'.</msg>
 <arg>accountype</arg>
 <arg>saving</arg>
 <doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<status status="PASS" start="2025-07-17T21:28:20.576807" elapsed="0.015398"/>
+<status status="PASS" start="2025-07-18T13:20:02.348837" elapsed="0.017095"/>
 </kw>
 <kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:20.592722" level="INFO">Selecting checkbox 'id:passport'.</msg>
+<msg time="2025-07-18T13:20:02.366657" level="INFO">Selecting checkbox 'id:passport'.</msg>
 <arg>id:passport</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-17T21:28:20.592527" elapsed="0.075586"/>
+<status status="PASS" start="2025-07-18T13:20:02.366389" elapsed="0.081372"/>
 </kw>
 <kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:20.668668" level="INFO">Selecting checkbox 'id:studentid'.</msg>
+<msg time="2025-07-18T13:20:02.448290" level="INFO">Selecting checkbox 'id:studentid'.</msg>
 <arg>id:studentid</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-17T21:28:20.668462" elapsed="0.091284"/>
+<status status="PASS" start="2025-07-18T13:20:02.448086" elapsed="0.068822"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:20.760214" level="INFO">Typing text '989898' into text field 'id:identity_number'.</msg>
+<msg time="2025-07-18T13:20:02.517661" level="INFO">Typing text '989898' into text field 'id:identity_number'.</msg>
 <arg>id:identity_number</arg>
 <arg>989898</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-17T21:28:20.760038" elapsed="0.058561"/>
+<status status="PASS" start="2025-07-18T13:20:02.517400" elapsed="0.073635"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:20.819313" level="INFO">Selecting options from selection list 'dob_month' by label September.</msg>
+<msg time="2025-07-18T13:20:02.592013" level="INFO">Selecting options from selection list 'dob_month' by label September.</msg>
 <arg>dob_month</arg>
 <arg>September</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-07-17T21:28:20.819068" elapsed="0.077298"/>
+<status status="PASS" start="2025-07-18T13:20:02.591704" elapsed="0.092270"/>
 </kw>
 <kw name="Select From List By Index" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:20.896994" level="INFO">Selecting options from selection list 'dob_date' by index 15.</msg>
+<msg time="2025-07-18T13:20:02.684630" level="INFO">Selecting options from selection list 'dob_date' by index 15.</msg>
 <arg>dob_date</arg>
 <arg>15</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="PASS" start="2025-07-17T21:28:20.896754" elapsed="0.113182"/>
+<status status="PASS" start="2025-07-18T13:20:02.684391" elapsed="0.124541"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-07-17T21:28:21.010678" level="INFO">Selecting options from selection list 'dob_year' by label 1997.</msg>
+<msg time="2025-07-18T13:20:02.809536" level="INFO">Selecting options from selection list 'dob_year' by label 1997.</msg>
 <arg>dob_year</arg>
 <arg>1997</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-07-17T21:28:21.010392" elapsed="0.071455"/>
+<status status="PASS" start="2025-07-18T13:20:02.809322" elapsed="0.069380"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T13:20:02.879184" level="INFO">Selecting 'divorced' from radio button 'marital_status'.</msg>
+<arg>marital_status</arg>
+<arg>divorced</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-07-18T13:20:02.879019" elapsed="0.066781"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-07-18T13:20:02.946897" level="INFO">Selecting options from selection list 'country_code' by label Finland (+358).</msg>
+<arg>country_code</arg>
+<arg>Finland (+358)</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-07-18T13:20:02.946444" elapsed="0.082599"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T13:20:03.029764" level="INFO">Typing text '039787878' into text field 'id:mobile'.</msg>
+<arg>id:mobile</arg>
+<arg>039787878</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T13:20:03.029494" elapsed="0.075016"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-07-18T13:20:03.105407" level="INFO">Selecting options from selection list 'nationality' by label Turkish.</msg>
+<arg>nationality</arg>
+<arg>Turkish</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-07-18T13:20:03.104966" elapsed="0.073971"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T13:20:03.179576" level="INFO">Typing text 'antalya' into text field 'name:address'.</msg>
+<arg>name:address</arg>
+<arg>antalya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T13:20:03.179339" elapsed="0.081371"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-18T13:20:03.261557" level="INFO">Typing text 'alanya' into text field 'id:state'.</msg>
+<arg>id:state</arg>
+<arg>alanya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T13:20:03.261310" elapsed="0.105906"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-07-18T13:20:03.367968" level="INFO">Selecting options from selection list 'country' by label Turkey.</msg>
+<arg>country</arg>
+<arg>Turkey</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-07-18T13:20:03.367685" elapsed="0.121512"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-18T13:20:03.489936" level="INFO">Clicking button 'xpath://input[@value='Submit']'.</msg>
+<arg>xpath://input[@value='Submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-18T13:20:03.489619" elapsed="1.277334"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-17T21:28:31.083195" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-07-18T13:20:14.768231" level="INFO">Slept 10 seconds.</msg>
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-17T21:28:21.082374" elapsed="10.001321"/>
+<status status="PASS" start="2025-07-18T13:20:04.767305" elapsed="10.001419"/>
 </kw>
-<status status="PASS" start="2025-07-17T21:28:15.919150" elapsed="15.166100"/>
+<status status="PASS" start="2025-07-18T13:19:55.286729" elapsed="19.482990"/>
 </test>
-<status status="PASS" start="2025-07-17T21:28:15.474866" elapsed="15.614934"/>
+<status status="PASS" start="2025-07-18T13:19:54.874314" elapsed="19.902812"/>
 </suite>
 <statistics>
 <total>
