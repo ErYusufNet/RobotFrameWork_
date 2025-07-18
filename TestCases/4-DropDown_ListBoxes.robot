@@ -28,7 +28,16 @@ Testing
     Select From List By Index   dob_date     15
     Select From List By Label    dob_year    1997
     Select Radio Button    marital_status    divorced
-    Select From List By Label
+    Select From List By Label    country_code    Finland (+358)
+    Input Text    id:mobile    039787878
+    Select From List By Label    nationality   Turkish
+    Input Text    name:address    antalya
+    Input Text    id:state    alanya
+    Select From List By Label    country    Turkey
+    Click Button    xpath://input[@value='Submit']
+
+
+
     
     Sleep    10
 
