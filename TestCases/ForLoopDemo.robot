@@ -1,42 +1,33 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Variables ***
+${URL}      https://www.google.com/
+${BROWSER}  chrome
 
 *** Test Cases ***
-Forloop6
-    forloop6
+Test for loop
+    [Documentation]    test case to demonstrate for loop in robot framework
+    Set Selenium Implicit Wait    5s
 
-*** Keywords ***
-ForLoop1
-    FOR    ${i}    IN RANGE    1    10
-        LOG TO CONSOLE    ${i}
+    Open Browser    ${URL}    ${BROWSER}
+    Maximize Browser Window
+
+    # Cookie banner (varsa) kapat
+    Run Keyword And Ignore Error    Click Element    id=L2AGLb
+
+    # Arama
+    Wait Until Element Is Visible    name=q    10s
+    Input Text    name=q    RCV Academy
+    Press Keys    name=q    ENTER
+
+    # Sonuç başlıklarını yakala (daha sağlam XPath)
+    Wait Until Page Contains Element    xpath=//div[@id='rso']//h3    10s
+    @{results_on_page}=    Get WebElements    xpath=//div[@id='rso']//h3
+
+    FOR    ${el}    IN    @{results_on_page}
+        ${text}=    Get Text    ${el}
+        Log To Console    ${text}
     END
 
-ForLoop2
-    FOR    ${i}    IN    1 2 3 4 5 6 7 8
-        LOG TO CONSOLE    ${i}
-    END
-
-ForLoop3withList
-    @{items}    create list    1    2   3   4   5
-    FOR    ${i}  IN    @{items}
-    log to console    ${i}
-    END
-Forloop4
-    FOR    ${i}     IN    john  david   smith
-    LOG TO CONSOLE    ${i}
-    END
-
-Forloop5
-    @{namelist}     CREATE LIST    john     david   smith   scott
-    FOR     ${i}    IN    @{namelist}
-    log to console    ${i}
-    END
-Forloop6    #exit for loop
-    @{items}     create list    1    2    3    4    5
-    FOR    ${i}     IN  @{items}
-    log to console    ${i}
-    exit for loop if    ${i}==3
-    END
-
-
-
-
-
+    Close Browser
