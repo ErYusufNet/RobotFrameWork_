@@ -1,0 +1,4 @@
+*** Test Cases ***;${username};${password}
+;adm@yourstore.com;admin
+;admin@yourstore.com;adm
+;adm@yourstore.com;adm
